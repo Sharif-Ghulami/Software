@@ -12,7 +12,10 @@ const router = createBrowserRouter([
     element: <Computer />,
   },
 ]);
+   
 
+
+// sffsfdfd
 function App() {
   return <RouterProvider router={router} />;
 }
