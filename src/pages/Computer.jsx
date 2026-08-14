@@ -4,4 +4,4 @@ function Computer() {
 
 export default Computer;
 
-// hello
+
