@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #355576;
+}
+@layer components {
+  .btn-rounded {
+    @apply border rounded-full flex justify-center items-center;
+  }
+}
