@@ -6,6 +6,7 @@ import Firmware from "./pages/Firmware";
 import Home from "./home/Home";
 import ChildPage from "./pages/Child";
 import ComputerPage from "./pages/Computer";
+import { Contact } from "lucide-react";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     path: "/Frimware",
     element: <Firmware />,
   },
+  {
+    path: "/Contact",
+    element:<Contact/>
+  }
 ]);
 
 function App() {
