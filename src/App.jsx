@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Mobile from "./pages/Mobile";
-import Game from "./Pages/Game ";
-import Firmware from "./Pages/Firmware";
+import Game from "./pages/Game";
+import Firmware from "./pages/Firmware";
 import Home from "./home/Home";
 import ChildPage from "./pages/Child";
 import ComputerPage from "./pages/Computer";

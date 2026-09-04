@@ -7,7 +7,7 @@ function Hero() {
     <>
       <div className="">
         <div className="text-center ">
-          <h1 className="text-2xl fo text-black-900 font-medium">
+          <h1 className="text-2xl text-black-900 font-medium">
             هوشمندانه انتخاب کنید، مطمئن دانلود کنید
           </h1>
           <p className="text-gray-600 text-lg mt-2">
@@ -16,7 +16,7 @@ function Hero() {
           </p>
         </div>
         <div className="w-full max-w-3xl px-4 mx-auto mt-8 sm:px-6 lg:px-8">
-          <div className="flex flex-colflex flex-col rounded-full sm:flex-row sm:bg-white sm:p-1 sm:ring-1 sm:ring-inset sm:ring-gray-300">
+          <div className="flex flex-col rounded-full sm:flex-row sm:bg-white sm:p-1 sm:ring-1 sm:ring-inset sm:ring-gray-300">
             <div className="flex items-stretch grow focus-within:z-10">
               <button className="cursor-pointer bg-primary font-bold rounded-full px-12 py-2 text-white   ">
                 <Search />

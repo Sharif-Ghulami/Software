@@ -7,7 +7,7 @@ import { Joystick } from "lucide-react";
 // import Child from "./../pages/Child";
 import { Link } from "react-router-dom";
 
-function icons() {
+function Icons() {
   return (
     <div>
       <div className="flex justify-center items-center gap-6     ">
@@ -31,4 +31,4 @@ function icons() {
   );
 }
 
-export default icons;
+export default Icons;
