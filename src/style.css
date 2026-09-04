@@ -1,11 +1,35 @@
 @import "tailwindcss";
+@import url('https://googleapis.com');
+
 
 @theme {
   --color-primary: #355576;
   --color-secondary: #111827;
+--color-hover:#4668A8;
+--color-callus:#E5E7EB
+
+
+  /* --font-Vazimath: "Vazimath Fallback",sans-serif ; */
 }
+
 @layer components {
   .btn-rounded {
     @apply border rounded-full flex justify-center items-center;
   }
+}
+
+@font-face {
+  font-family: "Vazimath Fallback";
+  src: url("/fonts/Vazimath-Fallback.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-vazimath: "Vazimath Fallback", sans-serif;
+}
+
+body {
+  font-family: var(--font-vazimath);
 }
