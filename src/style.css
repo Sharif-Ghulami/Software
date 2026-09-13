@@ -1,15 +1,10 @@
 @import "tailwindcss";
-@import url('https://googleapis.com');
-
-
 @theme {
   --color-primary: #355576;
   --color-secondary: #111827;
---color-hover:#4668A8;
---color-callus:#E5E7EB
-
-
-  /* --font-Vazimath: "Vazimath Fallback",sans-serif ; */
+  --color-hover: #4668a8;
+  --color-callus: #e5e7eb
+    /* --font-Vazimath: "Vazimath Fallback",sans-serif ; */;
 }
 
 @layer components {

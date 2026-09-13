@@ -1,12 +1,14 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import CompSoftware from "./computerSoftware/CompSoftware";
 
 function Home() {
   return (
-    <div>
-      <Hero />
-      <Navbar />
+    <div className="bg-gray-50 selection:bg-primary-300/90">
+      {/* <Hero />   */}
+      {/* <Navbar /> */}
       {/* <Test /> */}
+      <CompSoftware />
     </div>
   );
 }

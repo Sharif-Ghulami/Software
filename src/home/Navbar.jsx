@@ -3,10 +3,14 @@ import Icons from "./Icons";
 import logo from "../../logo.png";
 function Navbar() {
   return (
-    <div className="flex items-center justify-around  ">
-      <Contact/>
-      <Icons />
-     <img className="w-auto h-1/2 cursor-pointer " src={logo} alt="Logo" />
+    <div className="fixed top-8 z-50 w-full ">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
+        <div className="hidden items-center justify-between rounded-full border pl-3.5 pr-5 backdrop-blur-sm lg:flex border-gray-300/80 bg-white">
+          <Contact />
+          <Icons />
+          <img className="w-auto h-1/2 cursor-pointer " src={logo} alt="Logo" />
+        </div>
+      </div>
     </div>
   );
 }
