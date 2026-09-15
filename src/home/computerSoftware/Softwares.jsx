@@ -82,16 +82,18 @@ function Card({ title, description, image }) {
     <div className="group relative flex cursor-pointer items-center gap-4 rounded-2xl border bg-white p-5 transition hover:border-gray-400/70 hover:bg-gray-50">
       {/* Text */}
       <div className="flex-1 text-right">
-        <h2 className="text-xl font-medium">{title}</h2>
+        <h3 className="line-clamp-1 font-inter text-base font-medium text-gray-900">
+          {title}
+        </h3>
 
-        <p className="mt-3 text-base">{description}</p>
+        <p className="mt-2 line-clamp-2 text-sm">{description}</p>
       </div>
 
       {/* Image */}
       <img
         src={image}
         alt={title}
-        className="h-28 w-28 rounded-2xl object-cover"
+        className="size-18 rounded-xl mx-auto shrink-0 overflow-hidden"
       />
     </div>
   );
@@ -99,7 +101,7 @@ function Card({ title, description, image }) {
 
 function Softwares() {
   return (
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 gap-5 mt-8 lg:grid-cols-2 xl:grid-cols-3">
       {cards.map((card) => (
         <Card
           key={card.id}

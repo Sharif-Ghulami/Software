@@ -1,6 +1,8 @@
+// import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import CompSoftware from "./computerSoftware/CompSoftware";
+import MobileSoftware from "./mobileSoftware/MobileSoftware";
 
 function Home() {
   return (
@@ -9,6 +11,8 @@ function Home() {
       {/* <Navbar /> */}
       {/* <Test /> */}
       <CompSoftware />
+      <MobileSoftware />
+      {/* <Footer /> */}
     </div>
   );
 }

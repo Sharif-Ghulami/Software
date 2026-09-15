@@ -1,10 +1,13 @@
 @import "tailwindcss";
 @theme {
   --color-primary: #355576;
+  --color-heading: #4b5563;
   --color-secondary: #111827;
   --color-hover: #4668a8;
   --color-callus: #e5e7eb
     /* --font-Vazimath: "Vazimath Fallback",sans-serif ; */;
+
+  --color-hvr: rgb(249 250 251/1);
 }
 
 @layer components {
