@@ -2,6 +2,7 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import CompSoftware from "./computerSoftware/CompSoftware";
+import ComputerGame from "./computergame/ComputerGame";
 import MobileSoftware from "./mobileSoftware/MobileSoftware";
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
       {/* <Test /> */}
       <CompSoftware />
       <MobileSoftware />
+      <ComputerGame />
       {/* <Footer /> */}
     </div>
   );
