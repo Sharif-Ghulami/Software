@@ -93,7 +93,7 @@ function Card({ title, description, image }) {
       <img
         src={image}
         alt={title}
-        className="size-18 rounded-xl mx-auto shrink-0 overflow-hidden"
+        className="h-18 w-auto text-right rounded-xl mx-auto shrink-0 overflow-hidden"
       />
     </div>
   );

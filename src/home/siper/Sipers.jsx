@@ -29,6 +29,16 @@ const cards = [
     title: "x",
     category: "شبکه های اجتماعی",
   },
+  {
+    source: x,
+    title: "x",
+    category: "شبکه های اجتماعی",
+  },
+  {
+    source: x,
+    title: "x",
+    category: "شبکه های اجتماعی",
+  },
 ];
 
 function Sipers() {

@@ -1,4 +1,4 @@
-// import Footer from "./Footer";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import CompSoftware from "./computerSoftware/CompSoftware";
@@ -8,13 +8,13 @@ import MobileSoftware from "./mobileSoftware/MobileSoftware";
 function Home() {
   return (
     <div className="bg-gray-50 selection:bg-primary-300/90">
-      {/* <Hero />   */}
-      {/* <Navbar /> */}
+      <Hero />
+      <Navbar />
       {/* <Test /> */}
       <CompSoftware />
       <MobileSoftware />
       <ComputerGame />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

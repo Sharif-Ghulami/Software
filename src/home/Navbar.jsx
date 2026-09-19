@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import Contact from "../pages/Contact";
 import Icons from "./Icons";
 import logo from "../../logo.png";
@@ -9,6 +10,17 @@ function Navbar() {
           <Contact />
           <Icons />
           <img className="w-auto h-1/2 cursor-pointer " src={logo} alt="Logo" />
+        </div>
+        {/* /* Mobile Navbar */}
+        <div className="flex items-center justify-between">
+          <button>
+            <Menu size={24} />
+          </button>
+          <img
+            className="lg:hidden sm:w-auto h-1/2 cursor-pointer sm:px-4 "
+            src={logo}
+            alt="Logo"
+          />
         </div>
       </div>
     </div>
