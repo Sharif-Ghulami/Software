@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import CompSoftware from "./computerSoftware/CompSoftware";
@@ -14,7 +14,7 @@ function Home() {
       <CompSoftware />
       <MobileSoftware />
       <ComputerGame />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
