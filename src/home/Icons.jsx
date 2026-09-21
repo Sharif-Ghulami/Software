@@ -48,8 +48,8 @@ function Icons({ mobile = false }) {
     <div
       className={
         mobile
-          ? "flex flex-col items-center gap-5  "
-          : "flex items-center gap-5 "
+          ? "flex flex-col items-center gap-5   "
+          : "flex flex-row-reverse  items-center gap-8  "
       }
     >
       <Link to="/" className="bg-primary btn-rounded size-10  ">

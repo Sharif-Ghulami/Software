@@ -1,10 +1,10 @@
 @import "tailwindcss";
 @theme {
   --color-primary: #355576;
-  --color-primary-600: 53 85 150;
+  --color-primary-600: rgb(53 85 150/1);
   --color-heading: #4b5563;
   --color-secondary: #111827;
-
+--color-hover-footer:rgb(17 24 39/1)
   --color-hover: #4668a8;
   --color-callus: #e5e7eb
     /* --font-Vazimath: "Vazimath Fallback",sans-serif ; */;
@@ -15,6 +15,9 @@
 @layer components {
   .btn-rounded {
     @apply border rounded-full flex justify-center items-center;
+  }
+  .know-more{
+@apply hover:text-primary-600 hover:underline
   }
 }
 

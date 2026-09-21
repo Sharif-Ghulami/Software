@@ -17,7 +17,7 @@ function Hero() {
         </div>
 
         <div className="w-full max-w-3xl px-4 mx-auto mt-8 sm:px-6 lg:px-8">
-          <label for="search" class="sr-only">
+          <label for="search" class="sr-only text-right">
             نرم افزار مورد نظر خود را جستجو کنید
           </label>
           <div className="flex flex-col rounded-full sm:flex-row sm:bg-white sm:p-1 sm:ring-1 sm:ring-inset sm:ring-gray-300">
@@ -28,7 +28,7 @@ function Hero() {
               </button>
               <div className="flex items-stretch grow focus-within:z-10">
                 <input
-                  className="block w-full px-5 py-4 ml-0 text-sm text-gray-900 bg-white border-0 rounded-none rounded-t-2xl ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:ml-2 sm:rounded-r-full sm:px-6 sm:ring-0 "
+                  className="block text-right w-full px-5 py-4 ml-0 text-sm text-gray-900 bg-white border-0 rounded-none rounded-t-2xl ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:ml-2 sm:rounded-r-full sm:px-6 sm:ring-0 "
                   type="text"
                   required
                   placeholder="نرم افزار خود را جستجو نماید"

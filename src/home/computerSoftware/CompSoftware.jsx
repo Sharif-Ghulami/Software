@@ -9,7 +9,7 @@ function CompSoftware() {
         <div className="flex flex-col items-start justify-between gap-y-4 md:flex-row md:items-end">
           <div className="flex items-center justify-center gap-1">
             <ChevronLeft size={18} />
-            <Link to="/Computer">بیشر ببینید</Link>
+            <Link className="know-more" to="/Computer">بیشر ببینید</Link>
           </div>
 
           <div className="text-right  ">
