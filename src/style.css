@@ -1,36 +1,41 @@
 @import "tailwindcss";
 @theme {
-  --color-primary: #355576;
+  --color-primary: #355596;
   --color-primary-600: rgb(53 85 150/1);
   --color-heading: #4b5563;
   --color-secondary: #111827;
---color-hover-footer:rgb(17 24 39/1)
+  --color-hover-footer: rgb(17 24 39/1);
   --color-hover: #4668a8;
-  --color-callus: #e5e7eb
+  --color-callus: #e5e7eb;
+  --color-gray-700: #374151
     /* --font-Vazimath: "Vazimath Fallback",sans-serif ; */;
 
   --color-hvr: rgb(249 250 251/1);
+
+  --font-vazimath: "Vazirmatn, Fallback";
 }
 
 @layer components {
   .btn-rounded {
-    @apply border rounded-full flex justify-center items-center;
+    @apply rounded-full flex justify-center items-center;
   }
-  .know-more{
-@apply hover:text-primary-600 hover:underline
+  .know-more {
+    @apply hover:text-primary-600 hover:underline;
   }
 }
 
 @font-face {
-  font-family: "Vazimath Fallback";
-  src: url("/fonts/Vazimath-Fallback.woff2") format("woff2");
+  font-family: "Vazirmatn Fallback";
+  src: url("/fonts/Vazirmatn-Fallback.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --font-vazimath: "Vazimath Fallback", sans-serif;
+  --font-vazimath: "Vazirmatn Fallback";
+}
+html {
 }
 
 body {

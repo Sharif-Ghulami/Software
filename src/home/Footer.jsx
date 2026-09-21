@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer dir="rtl" className="bg-[#f8f9fa] text-gray-700">
-     <div className="mx-auto max-w-[1320px] px-6 sm:px-8 lg:px-10">
-         {/* Main Footer */}
+    <footer dir="rtl" className="bg-[#f8f9fa] text-gray-700 px-10">
+      <div className="mx-auto max-w-[1320px] px-6 sm:px-8 lg:px-10">
+        {/* Main Footer */}
         <div className="grid grid-cols-1 gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-16">
-             {/* Brand / About */}
+          {/* Brand / About */}
           <div className="lg:col-span-1">
             <Link
               to="/"
@@ -30,7 +30,7 @@ function Footer() {
               >
                 <Send size={21} strokeWidth={1.8} />
               </a> */}
-{/* 
+              {/* 
               <a
                 href="#"
                 aria-label="Facebook"
@@ -49,7 +49,7 @@ function Footer() {
             </div>
           </div>
 
-            {/* Categories */}
+          {/* Categories */}
           <div>
             <h3 className="mb-6 text-base font-semibold text-gray-900">
               دسته بندی ها
@@ -162,18 +162,14 @@ function Footer() {
               </li>
             </ul>
           </div>
-                    
-
-            
-
         </div>
-     </div>
-     {/* Bottom Border */}
-        <div className="border-t border-gray-200 py-8">
-          <p className="text-right text-xs text-gray-500">
-            © ۱۴۰۴ سافت ویر. تمامی حقوق محفوظ است.
-          </p>
-        </div>
+      </div>
+      {/* Bottom Border */}
+      <div className="border-t border-gray-200 py-8 px-10">
+        <p className="text-right text-md text-gray-500">
+          © ۱۴۰۴ سافت ویر. تمامی حقوق محفوظ است.
+        </p>
+      </div>
     </footer>
   );
 }
