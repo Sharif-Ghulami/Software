@@ -29,16 +29,17 @@ const cards = [
     title: "x",
     category: "شبکه های اجتماعی",
   },
-  {
-    source: x,
-    title: "x",
-    category: "شبکه های اجتماعی",
-  },
-  {
-    source: x,
-    title: "x",
-    category: "شبکه های اجتماعی",
-  },
+  // ,
+  // {
+  //   source: x,
+  //   title: "x",
+  //   category: "شبکه های اجتماعی",
+  // },
+  // {
+  //   source: x,
+  //   title: "x",
+  //   category: "شبکه های اجتماعی",
+  // },
 ];
 
 function Sipers() {
@@ -100,7 +101,7 @@ function Card({ source, title, category }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center select-none cursor-pointer  ">
           {/* App Icon */}
-          <div className=" w-25 h-25 max-w-[200px] mx-auto overflow-hidden rounded-3xl border border-gray-200 bg-white">
+          <div className=" size-20 max-w-[200px] mx-auto overflow-hidden rounded-3xl border border-gray-200 bg-white">
             <img
               src={source}
               alt={title}

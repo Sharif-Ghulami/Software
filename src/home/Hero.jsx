@@ -5,12 +5,12 @@ import { ChevronDown } from "lucide-react";
 function Hero() {
   return (
     <>
-      <div className="relative h-auto sm:h-screen">
+      <header className="relative h-auto sm:h-screen">
         <div className="text-center flex flex-col items-center justify-center  pt-32 pb-16 sm:pt-12 lg:pt-32">
-          <h1 className="text-2xl text-black-900 font-bold tracking-tight sm:text-2xl lg:text-3xl">
+          <h1 className="text-2xl text-secondary font-bold tracking-tight sm:text-2xl lg:text-3xl">
             هوشمندانه انتخاب کنید، مطمئن دانلود کنید
           </h1>
-          <p className="text-gray-600 text-lg mt-1">
+          <p className="text-heading text-lg mt-1">
             مجموعه‌ ای جامع از به‌ روزترین نرم‌ افزارها و بازی‌ها، گردآوری‌ شده
             از منابع معتبر
           </p>
@@ -46,7 +46,7 @@ function Hero() {
         <div className="absolute bottom-0 left-1/2 transform mb-4 -translate-x-1/2 ">
           <Down />
         </div>
-      </div>
+      </header>
     </>
   );
 }
