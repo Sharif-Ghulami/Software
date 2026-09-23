@@ -32,7 +32,9 @@
 :root {
   --font-vazimath: "Vazimath Fallback", sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-vazimath);
 }

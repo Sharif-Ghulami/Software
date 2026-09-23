@@ -4,7 +4,7 @@ import { ChevronLeft } from "lucide-react";
 
 function CompSoftware() {
   return (
-    <section className="mt-10 py-12 px-10 ">
+    <section id="scrollToComputer"className="mt-10 py-12 px-10 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
         <div className="flex flex-col items-start justify-between gap-y-4 md:flex-row md:items-end">
           <div className="flex items-center justify-center gap-1">

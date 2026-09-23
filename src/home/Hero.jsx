@@ -40,7 +40,7 @@ function Hero() {
             با بیش از ۸ هزار نرم افزار از فروشگاه های معتبر
           </p>
         </div>
-        <div>
+        <div href="#scrollToComputer">
           <Sipers />
         </div>
         <div className="absolute bottom-0 left-1/2 transform mb-4 -translate-x-1/2 ">
@@ -55,8 +55,12 @@ export default Hero;
 
 export function Down() {
   return (
-    <div className="animate-bounce size-12 text-gray-500  ">
-      <ChevronDown />
-    </div>
+    <a
+      href="#scrollToComputer"
+      className="animate-bounce flex items-center justify-center size-12 text-gray-500 cursor-pointer hover:text-primary transition-colors"
+    >
+      <ChevronDown size={32} />
+    </a>
   );
 }
+
