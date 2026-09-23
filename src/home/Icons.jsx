@@ -52,25 +52,22 @@ function Icons({ mobile = false }) {
           : "flex flex-row-reverse  items-center gap-8   "
       }
     >
-      <Link
-        to="/"
-        className="bg-primary btn-rounded size-10 hover:size-20 hover:translate-y-4  "
-      >
-        <House className="text-white " />
-      </Link>
-      <IconLink to="/Computer">
+      <IconLink to="/" className="bg-primary btn-rounded size-10 " label="خانه">
+        <House className="" />
+      </IconLink>
+      <IconLink to="/Computer" label={"کامپیوتر"}>
         <Laptop size={24} />
       </IconLink>
 
-      <IconLink to="/Child">
+      <IconLink to="/Child" label="کودک">
         <Baby size={24} />
       </IconLink>
 
-      <IconLink to="/Mobile">
+      <IconLink to="/Mobile" label="موبایل">
         <Smartphone size={24} />
       </IconLink>
 
-      <IconLink to="/Game">
+      <IconLink to="/Game" label="بازی">
         <Joystick size={24} />
       </IconLink>
     </div>
@@ -79,13 +76,50 @@ function Icons({ mobile = false }) {
 
 export default Icons;
 
-export function IconLink({ to, children }) {
+export function IconLink({ to, children, label }) {
   return (
     <Link
-      className=" size-9 border border-gray-400 rounded-full flex items-center justify-center "
       to={to}
+      className="
+        group relative
+        flex size-11
+        items-center justify-center
+      "
     >
-      {children}
+      {/* Icon */}{" "}
+      <div
+        className=" absolute bottom-0 left-1/2 -translate-x-1/2 flex size-11 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition-all duration-300 ease-out group-hover:scale-125 group-hover:translate-y-3
+       group-hover:shadow-lg "
+      >
+        {children}
+      </div>
+      <span
+        className="
+    absolute
+    -bottom-7
+    left-1/2
+    -translate-x-1/2
+
+    whitespace-nowrap
+    text-md
+    font-medium
+    text-gray-600
+    border border-gray-300 size-14 w-12 h-8 rounded-3xl flex items-center justify-center
+
+
+    opacity-0
+    translate-y-4
+
+    transition-all
+    duration-300
+
+    group-hover:opacity-100
+    group-hover:translate-y-6
+    bg-white
+  "
+      >
+        {label}
+      </span>
     </Link>
   );
 }
