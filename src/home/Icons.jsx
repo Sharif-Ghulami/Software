@@ -49,19 +49,19 @@ function Icons({ mobile = false }) {
       className={
         mobile
           ? "flex flex-col items-center gap-5   "
-          : "flex flex-row-reverse  items-center gap-8  "
+          : "flex flex-row-reverse  items-center gap-8   "
       }
     >
-      <Link to="/" className="bg-primary btn-rounded size-12  ">
+      <Link
+        to="/"
+        className="bg-primary btn-rounded size-10 hover:size-20 hover:translate-y-4  "
+      >
         <House className="text-white " />
       </Link>
       <IconLink to="/Computer">
         <Laptop size={24} />
       </IconLink>
 
-      {/* <Link to="/Child">
-        <Baby size={24} />
-        </Link> */}
       <IconLink to="/Child">
         <Baby size={24} />
       </IconLink>
@@ -82,7 +82,7 @@ export default Icons;
 export function IconLink({ to, children }) {
   return (
     <Link
-      className=" size-11 border border-gray-400 rounded-full flex items-center justify-center "
+      className=" size-9 border border-gray-400 rounded-full flex items-center justify-center "
       to={to}
     >
       {children}
