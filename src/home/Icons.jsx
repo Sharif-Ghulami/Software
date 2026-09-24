@@ -48,26 +48,27 @@ function Icons({ mobile = false }) {
     <div
       className={
         mobile
-          ? "flex flex-col items-center gap-5   "
+          ? "flex flex-col items-center gap-5"
           : "flex flex-row-reverse  items-center gap-8   "
       }
     >
-      <IconLink to="/" className="bg-primary btn-rounded size-10 " label="خانه">
-        <House className="" />
+      <IconLink to="/" label="خانه" active mobile={mobile}>
+        <House />
       </IconLink>
-      <IconLink to="/Computer" label={"کامپیوتر"}>
+
+      <IconLink to="/Computer" label="کامپیوتر" mobile={mobile}>
         <Laptop size={24} />
       </IconLink>
 
-      <IconLink to="/Child" label="کودک">
+      <IconLink to="/Child" label="کودک" mobile={mobile}>
         <Baby size={24} />
       </IconLink>
 
-      <IconLink to="/Mobile" label="موبایل">
+      <IconLink to="/Mobile" label="موبایل" mobile={mobile}>
         <Smartphone size={24} />
       </IconLink>
 
-      <IconLink to="/Game" label="بازی">
+      <IconLink to="/Game" label="بازی" mobile={mobile}>
         <Joystick size={24} />
       </IconLink>
     </div>
@@ -76,7 +77,7 @@ function Icons({ mobile = false }) {
 
 export default Icons;
 
-export function IconLink({ to, children, label }) {
+export function IconLink({ to, children, label, active, mobile }) {
   return (
     <Link
       to={to}
@@ -86,40 +87,62 @@ export function IconLink({ to, children, label }) {
         items-center justify-center
       "
     >
-      {/* Icon */}{" "}
+      {/* Icon */}
       <div
-        className=" absolute bottom-0 left-1/2 -translate-x-1/2 flex size-11 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition-all duration-300 ease-out group-hover:scale-125 group-hover:translate-y-3
-       group-hover:shadow-lg "
+        className={`absolute bottom-0 left-1/2 -translate-x-1/2 flex size-11 items-center justify-center rounded-full border border-gray-300 ${
+          active ? "bg-primary text-white" : "bg-white text-gray-600"
+        } ${
+          mobile
+            ? !active
+              ? "hover:bg-gray-100"
+              : ""
+            : "transition-all duration-300 ease-out group-hover:scale-125 group-hover:translate-y-3 group-hover:shadow-lg"
+        }`}
       >
         {children}
       </div>
-      <span
-        className="
-    absolute
-    -bottom-7
-    left-1/2
-    -translate-x-1/2
 
-    whitespace-nowrap
-    text-md
-    font-medium
-    text-gray-600
-    border border-gray-300 size-14 w-12 h-8 rounded-3xl flex items-center justify-center
-
-
-    opacity-0
-    translate-y-4
-
-    transition-all
-    duration-300
-
-    group-hover:opacity-100
-    group-hover:translate-y-6
-    bg-white
-  "
-      >
-        {label}
-      </span>
+      {/* Label - desktop only */}
+      {!mobile && (
+        <span
+          className="
+            absolute
+            -bottom-7
+            left-1/2
+            -translate-x-1/2
+            whitespace-nowrap
+            text-md
+            font-medium
+            text-gray-600
+            border border-gray-300
+            size-14
+            w-12
+            h-8
+            rounded-3xl
+            flex items-center justify-center
+            opacity-0
+            translate-y-4
+            transition-all
+            duration-300
+            group-hover:opacity-100
+            group-hover:translate-y-6
+            bg-white
+          "
+        >
+          {label}
+        </span>
+      )}
     </Link>
   );
 }
+
+// export function IconLink({ to, children, label, active, mobile }) {
+//   return (
+//     <lInk>
+//       <div className="" to={to}>
+//         {children}
+//       </div>
+//       <div className="">{label}</div>
+//     </lInk>
+//   );
+// }
