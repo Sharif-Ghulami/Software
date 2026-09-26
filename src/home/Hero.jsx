@@ -2,6 +2,8 @@ import Sipers from "./siper/Sipers";
 import { Search } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 
+//
+
 function Hero() {
   return (
     <>
@@ -22,7 +24,7 @@ function Hero() {
           </label>
           <div className="flex flex-col rounded-full sm:flex-row sm:bg-white sm:p-1 sm:ring-1 sm:ring-inset sm:ring-gray-300">
             <div className="flex items-stretch grow focus-within:z-10">
-              <button className="cursor-pointer bg-primary font-bold rounded-full px-12 py-2 text-white hover:bg-hover hover:text-white  ">
+              <button className="cursor-pointer flex items-center justify-center gap-4 bg-primary font-bold rounded-full px-8 py-2.5 text-white hover:bg-hover hover:text-white  ">
                 <Search />
                 جستجو
               </button>
@@ -43,7 +45,7 @@ function Hero() {
         <div href="#scrollToComputer">
           <Sipers />
         </div>
-        <div className="absolute bottom-0 left-1/2 transform mb-4 -translate-x-1/2 ">
+        <div className="absolute bottom-0 left-1/2 transform mb-4 -translate-x-1/2 z-50 ">
           <Down />
         </div>
       </header>
@@ -57,10 +59,9 @@ export function Down() {
   return (
     <a
       href="#scrollToComputer"
-      className="animate-bounce flex items-center justify-center size-12 text-gray-500 cursor-pointer hover:text-primary transition-colors"
+      className="animate-bounce  flex items-center justify-center size-12 text-gray-500 cursor-pointer hover:text-primary transition-colors"
     >
       <ChevronDown size={32} />
     </a>
   );
 }
-

@@ -53,17 +53,19 @@ function Navbar() {
 
   return (
     <div className="fixed top-8 z-50 w-full">
-      <div className="max-w-5xl mx-auto px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-6  lg:px-8">
         {/* Desktop Navbar */}
-        <div className="hidden lg:flex items-center justify-between rounded-full border pl-3.5 pr-5 border-gray-300/80 bg-white backdrop-blur-sm">
+        <div className="hidden lg:flex py-2 items-center justify-between rounded-full border pl-3.5 pr-5  border-gray-300/80 bg-white backdrop-blur-sm">
           <Contact />
           <Icons />
 
-          <img className="w-auto h-2/3 cursor-pointer" src={logo} alt="Logo" />
+          <a href="/" className="flex items-center justify-center ">
+            <img className=" cursor-pointer w-auto h-6" src={logo} alt="Logo" />
+          </a>
         </div>
 
         {/* Mobile Navbar */}
-        <div className="relative flex lg:hidden items-center justify-between rounded-full border pl-3.5 pr-5 border-gray-300/80 bg-white backdrop-blur-sm">
+        <div className="relative flex p-2 lg:hidden items-center justify-between rounded-full border pl-3.5 pr-5 border-gray-300/80 bg-white backdrop-blur-sm">
           {/* Menu */}
           <div className="relative">
             <button onClick={handleToggle} className="p-2">
@@ -80,7 +82,7 @@ function Navbar() {
 
           {/* Logo */}
           <img
-            className="h-10 w-auto cursor-pointer sm:px-4"
+            className="h-5 w-auto cursor-pointer sm:px-4 "
             src={logo}
             alt="Logo"
           />

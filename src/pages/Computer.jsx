@@ -1,4 +1,4 @@
-export default function ComputerPage() {
+function Computer() {
   return (
     <div>
       <h1>Computer Page</h1>
@@ -6,3 +6,4 @@ export default function ComputerPage() {
     </div>
   );
 }
+export default Computer;

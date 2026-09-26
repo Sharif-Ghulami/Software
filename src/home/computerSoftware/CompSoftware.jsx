@@ -1,20 +1,13 @@
-import { Link } from "react-router-dom";
+import ForMore from "../ForMore";
 import Softwares from "./Softwares";
-import { ChevronLeft } from "lucide-react";
 
 function CompSoftware() {
   return (
-    <section id="scrollToComputer"className="mt-10 py-12 px-10 ">
+    <section id="scrollToComputer" className="mt-10 py-12 px-10 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
         <div className="flex flex-col items-start justify-between gap-y-4 md:flex-row md:items-end">
           <div className="flex items-center justify-center gap-1">
-            <Link
-              className="know-more flex items-center justify-center gap-1"
-              to="/Computer"
-            >
-              <ChevronLeft size={18} />{" "}
-              <span className="text-md  "> بیشر ببینید</span>
-            </Link>
+            <ForMore to="/Computer" />
           </div>
 
           <div className="text-right  ">
