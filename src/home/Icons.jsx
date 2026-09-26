@@ -54,11 +54,11 @@ function Icons({ mobile = false }) {
     >
       <Link
         to="/"
-        className="bg-primary btn-rounded size-10 hover:size-20 hover:translate-y-4  "
+        className="bg-primary btn-rounded size-10 hover:size-20   "
       >
         <House className="text-white " />
       </Link>
-      <IconLink to="/Computer">
+      <IconLink to="/Computer" laybel={"کامپبوتر"}>
         <Laptop size={24} />
       </IconLink>
 
@@ -79,13 +79,15 @@ function Icons({ mobile = false }) {
 
 export default Icons;
 
-export function IconLink({ to, children }) {
+export function IconLink({ to, children,laybel }) {
   return (
     <Link
-      className=" size-9 border border-gray-400 rounded-full flex items-center justify-center "
+     
       to={to}
     >
-      {children}
+      <div className=" size-9 border border-gray-400 rounded-full flex items-center justify-center ">{children}</div>
+   
+      <div className="border border-gray-400 rounded-4xl w-14 h-8 bg-white  absolute top-14 flex items-center justify-center"> <span className="text-sm ">{laybel}</span> </div>
     </Link>
-  );
+  )
 }
