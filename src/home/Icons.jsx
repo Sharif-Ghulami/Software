@@ -52,21 +52,11 @@ function Icons({ mobile = false }) {
           : "flex flex-row-reverse  items-center gap-8   "
       }
     >
-<<<<<<< HEAD
-      <Link
-        to="/"
-        className="bg-primary btn-rounded size-10 hover:size-20   "
-      >
-        <House className="text-white " />
-      </Link>
-      <IconLink to="/Computer" laybel={"کامپبوتر"}>
-=======
       <IconLink to="/" label="خانه" active mobile={mobile}>
         <House />
       </IconLink>
 
       <IconLink to="/Computer" label="کامپیوتر" mobile={mobile}>
->>>>>>> 0bd460d3f6619e3fbaeff900023e449ef82632f2
         <Laptop size={24} />
       </IconLink>
 
@@ -87,16 +77,9 @@ function Icons({ mobile = false }) {
 
 export default Icons;
 
-<<<<<<< HEAD
-export function IconLink({ to, children,laybel }) {
-  return (
-    <Link
-     
-=======
 export function IconLink({ to, children, label, active, mobile }) {
   return (
     <Link
->>>>>>> 0bd460d3f6619e3fbaeff900023e449ef82632f2
       to={to}
       className="
         group relative
@@ -104,11 +87,6 @@ export function IconLink({ to, children, label, active, mobile }) {
         items-center justify-center
       "
     >
-<<<<<<< HEAD
-      <div className=" size-9 border border-gray-400 rounded-full flex items-center justify-center ">{children}</div>
-   
-      <div className="border border-gray-400 rounded-4xl w-14 h-8 bg-white  absolute top-14 flex items-center justify-center"> <span className="text-sm ">{laybel}</span> </div>
-=======
       {/* Icon */}
       <div
         className={`absolute bottom-0 left-1/2 -translate-x-1/2 flex size-11 items-center justify-center rounded-full border border-gray-300 ${
@@ -154,9 +132,8 @@ export function IconLink({ to, children, label, active, mobile }) {
           {label}
         </span>
       )}
->>>>>>> 0bd460d3f6619e3fbaeff900023e449ef82632f2
     </Link>
-  )
+  );
 }
 
 // export function IconLink({ to, children, label, active, mobile }) {
