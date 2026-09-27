@@ -4,6 +4,18 @@ import { ChevronDown } from "lucide-react";
 
 //
 
+const handleScroll = () => {
+  document.getElementById("scrollToComputer")?.scrollIntoView({
+    behavior: "smooth",
+  });
+};
+
+// const handleScroll = () => {
+//   document.getElementById("scrollToComputer")?.scrollIntoView({
+//     behavior: "smooth",
+//   });
+// };
+
 function Hero() {
   return (
     <>
@@ -18,97 +30,98 @@ function Hero() {
           </p>
         </div>
 
-        <div className="w-full max-w-3xl px-4 mx-auto mt-8 sm:px-6 lg:px-8">
-  <label htmlFor="search" className="sr-only">
-    نرم افزار مورد نظر خود را جستجو کنید
-  </label>
+        <div className="w-full max-w-3xl px-4 mx-auto sm:px-6  lg:px-8">
+          <label htmlFor="search" className="sr-only">
+            نرم افزار مورد نظر خود را جستجو کنید
+          </label>
 
-  <div
-    className="
-      flex flex-col
-      overflow-hidden
-      rounded-3xl
-      border border-gray-300
-      bg-white
+          <div
+            className="
+                  flex flex-col
+                  overflow-hidden
+                  rounded-3xl
+                  border border-gray-300
+                  bg-white
 
-      sm:flex-row
-      sm:rounded-full
-      sm:border-0
-      sm:p-1
-      sm:ring-1
-      sm:ring-inset
-      sm:ring-gray-300
+                  sm:flex-row
+                  sm:rounded-full
+                  sm:border-0
+                  sm:p-1
+                  sm:ring-1
+                  sm:ring-inset
+                  sm:ring-gray-300
     "
-  >
-    {/* Button */}
-    <button
-      className="
-        order-2
-        w-full
-        h-20
-        flex items-center justify-center gap-3
-        bg-primary
-        font-bold
-        text-white
-        cursor-pointer
+          >
+            {/* Button */}
+            <button
+              className="
+                    order-2
+                    w-full
+                  
+                    flex items-center justify-center gap-3
+                    bg-primary
+                    font-bold
+                    text-white
+                    cursor-pointer
 
-        sm:order-1
-        sm:w-auto
-        sm:h-auto
-        sm:rounded-full
-        sm:px-8
-        sm:py-2.5
+                    sm:order-1
+                    sm:w-auto
+                    h-12
+                    sm:h-auto
+                    sm:rounded-full
+                    sm:px-8
+                    sm:py-2.5
 
-        hover:bg-hover
+                    hover:bg-hover
       "
-    >
-      <Search size={25} />
+            >
+              <Search size={25} />
 
-      <span>
-        جستجو
-      </span>
-    </button>
+              <span>جستجو</span>
+            </button>
 
-    {/* Input */}
-    <div
-      className="
-        order-1
-        flex grow
-        sm:order-2
+            {/* Input */}
+            <div
+              className="
+              order-1
+              flex grow
+              sm:order-2
       "
-    >
-      <input
-        id="search"
-        type="text"
-        required
-        placeholder="نرم افزار خود را جستجو نمایید"
-        className="
-          block
-          w-full
-          h-20
-          px-5
-          text-right
-          text-sm
-          text-gray-900
-          bg-white
-          border-0
-          outline-none
-          placeholder:text-gray-400
+            >
+              <input
+                id="search"
+                type="text"
+                required
+                placeholder="نرم افزار خود را جستجو نمایید"
+                className="
+                        block
+                        w-full
+                        h-12
+                        py-4.5
+                        px-5
+                        text-right
+                        text-sm
+                        text-gray-900
+                        bg-white
+                        border-0
+                        outline-none
+                        placeholder:text-gray-400
 
-          sm:h-auto
-          sm:px-6
-          sm:rounded-r-full
-          sm:ring-0
+                        sm:h-auto
+                        sm:px-6
+                        sm:py-4
+                        sm:rounded-r-full
+                        sm:ring-0
         "
-      />
-    </div>
-  </div>
+              />
+            </div>
+          </div>
 
-  <p className="mt-5 text-sm text-center text-gray-700">
-    با بیش از ۸ هزار نرم افزار از فروشگاه های معتبر
-  </p>
-</div>
-        <div href="#scrollToComputer">
+          <p className="mt-5 text-sm text-center text-gray-700">
+            با بیش از ۸ هزار نرم افزار از فروشگاه های معتبر
+          </p>
+        </div>
+        <div>
           <Sipers />
         </div>
         <div className="absolute bottom-0 left-1/2 transform mb-4 -translate-x-1/2 z-50 ">
@@ -123,11 +136,11 @@ export default Hero;
 
 export function Down() {
   return (
-    <a
-      href="#scrollToComputer"
-      className="animate-bounce  flex items-center justify-center size-12 text-gray-500 cursor-pointer hover:text-primary transition-colors"
+    <div
+      onClick={handleScroll}
+      className="animate-bounce  flex items-center justify-center size-8 text-gray-600 cursor-pointer hover:text-primary transition-colors"
     >
       <ChevronDown size={32} />
-    </a>
+    </div>
   );
 }

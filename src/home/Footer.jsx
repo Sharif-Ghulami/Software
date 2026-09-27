@@ -175,3 +175,9 @@ function Footer() {
 }
 
 export default Footer;
+
+// export function FooterLink({ to }) {
+//   <Link to={to} style={"transition-colors,text-hover"}>
+//     <div className=""></div>
+//   </Link>;
+// }

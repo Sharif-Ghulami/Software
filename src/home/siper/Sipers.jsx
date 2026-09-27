@@ -44,7 +44,7 @@ const cards = [
 
 function Sipers() {
   return (
-    <div className="w-full mt-10" dir="rtl">
+    <div className="w-full mt-6" dir="rtl">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={28}
@@ -97,29 +97,27 @@ function Sipers() {
 
 function Card({ source, title, category }) {
   return (
-    <div className="mt-16 w-full">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center select-none cursor-pointer  ">
-          {/* App Icon */}
-          <div className=" size-20 max-w-[200px] mx-auto overflow-hidden rounded-3xl border border-gray-200 bg-white">
-            <img
-              src={source}
-              alt={title}
-              className="w-full h-full object-cover"
-            />
-          </div>
+    <div className="mt-16 w-2/3 bg-amber-300 ">
+      <div className="group relative items-center gap-x-4 text-center transition bg-blue-300 ">
+        {/* App Icon */}
+        <div className=" relative mx-auto overflow-hidden rounded-3xl border bg-white lg:shrink-0 ">
+          <img
+            src={source}
+            alt={title}
+            className="size-full transition duration-300 group-hover:scale-110 scale-100 blur-0 grayscale-0 "
+          />
+        </div>
 
-          {/* title/catagory */}
-          <div>
-            {/* Title */}
-            <h3 className="mt-3 text-[20px] font-medium text-gray-800 truncate">
-              {/* <a href="#"></a> */}
-              {title}
-            </h3>
+        {/* title/catagory */}
+        <div>
+          {/* Title */}
+          <h3 className="mt-2 text-20 font-medium text-gray-800 truncate">
+            {/* <a href="#"></a> */}
+            {title}
+          </h3>
 
-            {/* Category */}
-            <p className="mt-1 text-[17px] text-gray-500">{category}</p>
-          </div>
+          {/* Category */}
+          <p className="mt-1 text-16 text-gray-500">{category}</p>
         </div>
       </div>
     </div>
