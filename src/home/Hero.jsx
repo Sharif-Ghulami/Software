@@ -20,7 +20,7 @@ function Hero() {
   return (
     <>
       <header className="relative h-auto sm:h-screen">
-        <div className="text-center flex flex-col items-center justify-center  pt-32 pb-16 sm:pt-12 lg:pt-32">
+        <div className="text-center flex flex-col items-center justify-center  pt-32 pb-10 sm:pt-12 lg:pt-32">
           <h1 className="text-2xl text-secondary font-bold tracking-tight sm:text-2xl lg:text-3xl">
             هوشمندانه انتخاب کنید، مطمئن دانلود کنید
           </h1>
@@ -121,8 +121,8 @@ function Hero() {
             با بیش از ۸ هزار نرم افزار از فروشگاه های معتبر
           </p>
         </div>
-        <div>
-          <Sipers />
+        <div className="mt-10">
+          <Sipers className="" />
         </div>
         <div className="absolute bottom-0 left-1/2 transform mb-4 -translate-x-1/2 z-50 ">
           <Down />
