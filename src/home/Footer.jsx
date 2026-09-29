@@ -1,5 +1,6 @@
 import { Send } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../../Logo.png"
 
 function Footer() {
   return (
@@ -13,7 +14,8 @@ function Footer() {
               to="/"
               className="mb-5 inline-block text-3xl font-bold tracking-tight text-gray-900"
             >
-              s<span className="text-blue-500">⚙</span>ftware.af
+              <img src={logo}
+               alt="logo" className="size-full "/>
             </Link>
 
             <p className="max-w-82.5 text-sm leading-8 text-gray-600">
