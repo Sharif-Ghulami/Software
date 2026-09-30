@@ -89,7 +89,7 @@ function Sipers() {
           <SwiperSlide key={index}>
             <div className="flex flex-col items-center text-center group transition ">
               {/* Image */}
-              <div className=" size-36 overflow-hidden rounded-4xl  border-gray-200 ">
+              <div className=" size-34 overflow-hidden rounded-4xl  border-gray-200 ">
                 <img
                   src={card.image}
                   alt={card.title}

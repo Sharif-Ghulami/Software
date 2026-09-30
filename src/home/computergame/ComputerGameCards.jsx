@@ -67,7 +67,7 @@ function ComputerGameCards() {
               className="size-full object-cover group-hover:scale-105 scale-100 transition duration-200  "
             />
           </div>
-          <h3 className="group-hover:text-primary-600 ">{card.title}</h3>
+          <h3 className="group-hover:text-primary-600 mt-3">{card.title}</h3>
         </div>
       ))}
     </div>
