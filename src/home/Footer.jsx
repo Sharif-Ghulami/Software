@@ -37,7 +37,7 @@ function Footer() {
                 aria-label="Facebook"
                 className="text-gray-500 transition  hover:text-blue-500"
               >
-                <ion-icon className="" name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
               </a>
 
               <a
