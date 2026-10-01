@@ -35,10 +35,17 @@ function Footer() {
               <a
                 href="#"
                 aria-label="Facebook"
+<<<<<<< HEAD
+                className="text-gray-500 transition hover:text-blue-500"
+              >git pu
+                <Facebook size={21} strokeWidth={1.8} />
+              </a> */}
+=======
                 className="text-gray-500 transition  hover:text-blue-500"
               >
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
+>>>>>>> b7c1e729fd73bd610b1bb54d5c30d1c09da13103
 
               <a
                 href="#"
