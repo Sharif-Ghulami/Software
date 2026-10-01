@@ -37,7 +37,7 @@ function Footer() {
                 href="#"
                 aria-label="Facebook"
                 className="text-gray-500 transition hover:text-blue-500"
-              >
+              >git pu
                 <Facebook size={21} strokeWidth={1.8} />
               </a> */}
 
