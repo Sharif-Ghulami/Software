@@ -16,23 +16,24 @@ function Callus() {
             placeholder="ایمل خودراوارد نمایید"
             className="border rounded-2xl bg-gray-200 text-right"
           />
+          {/* Category */}
           <div className=" grid grid-cols-1  sm:grid-cols-2 gap-4 ">
-            <div className="flex flex-col text-right  justify-center  gap-2">
-              <label className=" text-white text-lg font-medium">
+            <div className="flex flex-col gap-2">
+              <label className=" text-white text-lg text-right font-medium">
                 شماره خودراوارد کنید
               </label>
               <input
-                className="w-full px-3 py-2 border rounded-2xl bg-gray-200 text-right"
+                className="w-full h-12 px-3 py-2 border rounded-2xl bg-gray-200 text-right"
                 type="text"
                 placeholder="شماره خود را وارد کنید"
               />
             </div>
 
-            <div className="flex  flex-col gap-2  " dir="rtl">
+            <div className="flex flex-col gap-2  " dir="rtl">
               <label className=" text-white text-right ">دسته بندی ها</label>
               <select
                 id=""
-                className="w-full px-3 py-2 border rounded-2xl bg-gray-200 "
+                className="w-full h-12 px-3 py-2 border rounded-2xl bg-gray-200 "
                 defaultValue=""
               >
                 <option value="" disabled>
