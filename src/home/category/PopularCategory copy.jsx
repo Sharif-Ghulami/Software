@@ -93,15 +93,27 @@ const computerCategories = [
 
 function CategoryCard({ title, icons }) {
   return (
-    <div>
-      <h3 className="mb-7 text-right text-lg font-semibold text-gray-900 ">
+    <div className="min-w-0 rounded-3xl border border-gray-300 bg-white px-7 py-6">
+      <h3 className="mb-7 text-right text-lg font-semibold text-gray-900">
         {title}
       </h3>
 
-      <div>
+      <div className="grid grid-cols-5 gap-2" dir="ltr">
         {icons.map((icon, index) => (
-          <div>
-            <img src={icon} alt="" className="w-full h-12" />
+          <div key={index} className="flex min-w-0 items-center justify-center">
+            <img
+              src={icon}
+              alt=""
+              className="
+                aspect-square
+                w-full
+                max-w-14
+                object-contain
+                transition-transform
+                duration-200
+                hover:scale-110
+              "
+            />
           </div>
         ))}
       </div>
@@ -109,22 +121,60 @@ function CategoryCard({ title, icons }) {
   );
 }
 
-export default function PopularCategory() {
-  const { platForm, setPlatForm } = useState("computer");
+export default function PopularCategories() {
+  const [platform, setPlatform] = useState("computer");
+
   return (
-    <div>
-      <button
-        onClick={() => setPlatForm("computer")}
-        className={`${platForm === "computer" ? "font-semibold text-primary" : "text-gray-50"}`}
-      >
-        کامپیوتر
-      </button>
-      <button
-        onClick={() => setPlatForm("mobile")}
-        className={`${platForm === "mobile" ? "font-semibold text-primary" : "text-gray-500"}`}
-      >
-        {}
-      </button>
-    </div>
+    <section className="w-full overflow-x-clip  mt-10 py-12 px-18 " dir="rtl">
+      {/* Platform tabs */}
+      <div className="mb-8 flex items-center justify-end gap-8 border-b border-gray-300  ">
+        <button
+          onClick={() => setPlatform("computer")}
+          className={`
+            relative pb-5 text-lg transition-colors
+            ${
+              platform === "computer"
+                ? "font-semibold text-primary"
+                : "text-gray-500"
+            }
+          `}
+        >
+          کامپیوتر
+          {platform === "computer" && (
+            <span className="absolute bottom-0 right-0 h-0.5 w-full bg-primary" />
+          )}
+        </button>
+
+        <button
+          onClick={() => setPlatform("mobile")}
+          className={`
+            relative pb-5 text-lg transition-colors
+            ${
+              platform === "mobile"
+                ? "font-semibold text-primary"
+                : "text-gray-500"
+            }
+          `}
+        >
+          موبایل
+          {platform === "mobile" && (
+            <span className="absolute bottom-0 right-0 h-0.5 w-full bg-primary" />
+          )}
+        </button>
+      </div>
+
+      {/* Categories */}
+      {platform === "computer" && (
+        <div className="grid min-w-0 grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
+          {computerCategories.map((category) => (
+            <CategoryCard
+              key={category.title}
+              title={category.title}
+              icons={category.icons}
+            />
+          ))}
+        </div>
+      )}
+    </section>
   );
 }
