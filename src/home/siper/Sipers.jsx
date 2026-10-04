@@ -55,6 +55,10 @@ function Sipers() {
     },
   ];
 
+  if (!cards || cards.length === 0) {
+    return <div className="text-center text-gray-500">No cards available</div>;
+  }
+
   return (
     <div className="w-full " dir="rtl">
       <Swiper

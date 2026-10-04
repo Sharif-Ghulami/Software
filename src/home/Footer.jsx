@@ -23,9 +23,9 @@ function Footer() {
             </p>
 
             {/* Social Icons */}
-            <div className="mt-7 flex items-center gap-5">
+            <div className="mt-7 flex   gap-5">
               <a
-                href="#"
+                href="https://t.me/brigesoftware"
                 aria-label="Telegram"
                 className="text-gray-500 transition hover:text-blue-500"
               >
@@ -33,26 +33,26 @@ function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.facebook.com/brigesoftware"
                 aria-label="Facebook"
-<<<<<<< HEAD
-                className="text-gray-500 transition hover:text-blue-500"
-              >git pu
-                <Facebook size={21} strokeWidth={1.8} />
-              </a> */}
-=======
                 className="text-gray-500 transition  hover:text-blue-500"
               >
-                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon
+                  className=""
+                  name="logo-facebook"
+                  style={{ fontSize: "20px" }}
+                ></ion-icon>
               </a>
->>>>>>> b7c1e729fd73bd610b1bb54d5c30d1c09da13103
 
               <a
-                href="#"
+                href="https://www.instagram.com/brigesoftware"
                 aria-label="Instagram"
-                className="text-gray-500 transition hover:text-pink-500"
+                className="text-gray-500 transition w-5 h-5 hover:text-pink-500"
               >
-                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon
+                  name="logo-instagram"
+                  style={{ fontSize: "20px" }}
+                ></ion-icon>
               </a>
             </div>
           </div>

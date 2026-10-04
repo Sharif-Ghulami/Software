@@ -1,22 +1,22 @@
-import Callus from "../pages/Callus";
-// import Footer from "./Footer";
-// import Hero from "./Hero";
-// import Navbar from "./Navbar";
-// import CompSoftware from "./computerSoftware/CompSoftware";
-// import ComputerGame from "./computergame/ComputerGame";
-// import MobileSoftware from "./mobileSoftware/MobileSoftware";
+// import Callus from "../pages/Callus";
+import Footer from "./Footer";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import CompSoftware from "./computerSoftware/CompSoftware";
+import ComputerGame from "./computergame/ComputerGame";
+import MobileSoftware from "./mobileSoftware/MobileSoftware";
 
 function Home() {
   return (
     <div className="bg-gray-50 selection:bg-primary-300/90">
-      <Callus />
-      {/* <Hero /> */}
-      {/* <Navbar /> */}
+      {/* <Callus /> */}
+      <Hero />
+      <Navbar />
       {/* <Test /> */}
-      {/* <CompSoftware /> */}
-      {/* <MobileSoftware /> */}
-      {/* <ComputerGame /> */}
-      {/* <Footer /> */}
+      <CompSoftware />
+      <MobileSoftware />
+      <ComputerGame />
+      <Footer />
     </div>
   );
 }

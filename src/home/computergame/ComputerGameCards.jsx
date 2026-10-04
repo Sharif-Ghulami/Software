@@ -54,17 +54,17 @@ const cards = [
 
 function ComputerGameCards() {
   return (
-    <div className=" grid grid-cols-1 gap-12 mt-8 lg:grid-cols-2 xl:grid-cols-3  ">
+    <div className=" grid grid-cols-1 gap-12 w-full mt-8 lg:grid-cols-2 xl:grid-cols-3  ">
       {cards.map((card, index) => (
         <div
           key={index}
-          className="group flex flex-col  justify-center items-center"
+          className="group w-full flex flex-col justify-center items-center"
         >
           <div className="overflow-hidden border rounded-4xl border-gray-200 ">
             <img
               src={card.image}
               alt={card.title}
-              className="size-full object-cover group-hover:scale-105 scale-100 transition duration-200  "
+              className="size-full object-cover group-hover:scale-105 scale-100 transition duration-300  "
             />
           </div>
           <h3 className="group-hover:text-primary-600 mt-3">{card.title}</h3>
